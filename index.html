@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!---FONTS--->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <!-----STYLES------->
+    <style>
+        *{
+            box-sizing: border-box;
+            margin:0;
+            padding: 0;
+        }
+        body {
+            font-family: 'poppins', sans-serif;
+            color: white;
+            display: flex;
+            flex-direction: column;
+            background: rgb(17, 30, 66);
+        }
+        header{
+            letter-spacing: 1.2px;
+            text-align: center;
+        }
+        main{
+            padding: 5%;
+            display: flex;
+            flex-direction: column;
+            align-items: space-between;
+            justify-content: space-between;
+        }
+        main > * {
+            border-radius: 10px;
+            padding: 2%;
+        }
+        input[type=text]{
+            margin-top: 2%;
+        }
+        input[type=button]{
+            margin: 5% 20%;
+        }
+    </style>
+    <title>Aula HTML</title>
+</head>
+<body>
+    <header>
+        <h2>Qualifica Mais Web - Turma 2</h2>
+        <h2>Convite para a conclusão de curso.</h2>
+    </header>
+    <main>
+        <label for="name">Seu nome:</label>
+        <input type="text" name="" id="name">
+        <input type="button" onclick="add()" value="Confirmar Presença">
+        <ol></ol>
+    </main>
+    <footer></footer>
+    <!----- SCRIPTS ------>
+    <script>
+        function add() {
+            let ol = document.querySelector('ol')
+            let name = document.querySelector('#name')
+            let li = document.createElement('li')
+            li.innerHTML = name.value;
+            ol.appendChild(li)
+        }
+    </script>
+</body>
+</html>
