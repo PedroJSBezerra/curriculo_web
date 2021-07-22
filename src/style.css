@@ -1,0 +1,95 @@
+:root{
+    --primary1: #335384;
+    --primary2: #5BA7D1;
+}
+@font-face {
+    font-family: GlacialIndifference;
+    src: url(./fonts/GlacialIndifference-Regular.otf) format('opentype');
+}
+*,*::before,*::after{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+}
+.app{
+    display: flex;
+    flex-direction: column;
+}
+header{
+    color: #fff;
+    padding:2%;
+    background: var(--primary1);
+    height: 100vh;
+}
+header ul{
+    height: 100%;
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    font-size: 20px;
+    font-family: 'Assistant', sans-serif;
+}
+header ul li:not(:first-child) img{
+    transform: translateY(4px);
+    width: 20px;
+    margin: 0 4% 0 10%;
+}
+.profile-image{
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+}
+header h3{
+    text-align: center;
+    font-family: 'Source Sans Pro';
+}
+header a{
+    color: #fff;
+    text-decoration: none;
+}
+main{
+    margin-left: 30vw;
+    flex: 1;
+    min-width: 60%;
+}
+footer{
+    background: var(--primary1);
+    width: 100%;
+}
+/* FOR DESKTOP SCREENS */
+@media screen and (min-width:600px){
+    .app{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    header{
+        position: fixed;
+        padding:2%;
+        background: var(--primary1);
+        width: 30vw;
+        height: 100vh;
+    }
+    header ul{
+        height: 100%;
+        font-family: 'Assistant', sans-serif;
+        list-style-type: none;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+    header h3{
+        font-family: 'Source Sans Pro';
+    }
+    main{
+        margin-left: 30vw;
+        flex: 1;
+        min-width: 60%;
+    }
+    footer{
+        background: var(--primary1);
+        width: 100%;
+    }    
+}
