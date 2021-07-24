@@ -116,32 +116,3 @@ footer{
     height: 4px;
     margin: 2px;
 }
-
-
-@media screen and (min-width:700px){
-    .app{
-        display: grid;
-        grid-template-columns: 2fr 1fr;
-        grid-template-rows: 4fr 1fr;
-
-        grid-template-areas: 
-        "main header"
-        "footer header"
-        ;
-    }
-    header{
-        position: fixed;
-        right: 0;
-        grid-area: header;
-    }
-    header ul{
-    }
-    header ul li:not(:first-child) img{
-    }
-    main{
-        grid-area: main;
-    }
-    footer{
-        grid-area: footer;
-    }
-}
