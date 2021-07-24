@@ -1,25 +1,29 @@
 /* FOR DESKTOP SCREENS */
-@media screen and (min-width:700px){
+/* @media screen and (min-width:700px){
     .app{
-        display: flex;
-        flex-wrap: wrap;
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        grid-template-rows: 4fr 1fr;
+
+        grid-template-areas: 
+        "main header"
+        "footer header"
+        ;
     }
-    header ul{
-        width: 35vw;
-        height: 100vh;
+    header{
         position: fixed;
         right: 0;
+        grid-area: header;
     }
-    header ul li:not(:first-child) img{
-        transform: translateY(4px);
-        width: 20px;
-        margin: 0 4% 0 8%;
-    }
-    main{
-        margin-right: 35vw;
-    }
-    footer{
-        margin-right: 35vw;
+    header ul{
         width: 100%;
     }
-}
+    header ul li:not(:first-child) img{
+    }
+    main{
+        grid-area: main;
+    }
+    footer{
+        grid-area: footer;
+    }
+} */
