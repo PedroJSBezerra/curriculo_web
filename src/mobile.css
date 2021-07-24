@@ -1,0 +1,118 @@
+:root{
+    --primary1: #335384;
+    --primary2: #5BA7D1;
+    --font-color1: #000;
+    --font-color2: #fff;
+    --font-size1: 1.25rem;
+    --font-size2: 3.5rem;
+}
+@font-face {
+    font-family: GlacialIndifference;
+    src: url(./fonts/GlacialIndifference-Regular.otf) format('opentype');
+}
+*,*::before,*::after{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: 'Assistant', sans-serif;
+    font-size: var(--font-size1);
+}
+.app{
+}
+header{
+}
+h3{
+    letter-spacing: 2px;
+}
+header ul{
+    background: var(--primary1);
+    color: var(--font-color2);
+    list-style-type: none;
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+header ul li:not(:first-child) img{
+    transform: translateY(4px);
+    width: 20px;
+    margin: 0 4% 0 14%;
+}
+.profile-image{
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+}
+header h3{
+    text-align: center;
+}
+header a{
+    color: var(--font-color2);
+    text-decoration: none;
+}
+/* =============== M A I N ================ */
+main{
+    padding: 5%;
+}
+main > * {
+    margin-bottom: 15%;
+    margin-left: 2%;
+}
+main section > * {
+    margin-bottom: 2%;
+}
+main section h1{
+    font-family: GlacialIndifference, sans-serif;
+    font-size: var(--font-size2);
+    color: var(--primary1);
+}
+main section h2::before{
+    content: " ";
+    display: block;
+    width: 12%;
+    height: 5px;
+    background: var(--primary1);
+}
+main section h2{
+    color: var(--primary2);
+}
+main section h3:first-child{
+    color: var(--primary2);
+}
+main section p:not(:first-child,:nth-child(2)){
+    font-weight: 300;
+}
+main section ul li{
+    margin-left: 1.3rem;
+}
+footer{
+    color: var(--font-color2);
+    text-align: center;
+    background: var(--primary1);
+}
+.button{
+    position: fixed;
+    z-index: 1;
+    right: 10px;
+    top: 10px;
+    width: 40px;
+    height: 40px;
+    border-radius: 20px;
+    background: rgba(0,0,0,0);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.button:hover{
+    background: rgba(0,0,0,.2);
+}
+.button span{
+    background: rgb(255, 255, 255);
+    border-radius: 3px;
+    width: 4px;
+    height: 4px;
+    margin: 2px;
+}
