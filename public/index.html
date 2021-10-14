@@ -1,85 +1,117 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!---STYLES--->
-    <link rel="stylesheet" href="../src/mobile.css">
-    <link rel="stylesheet" href="../src/desktop.css">
-    <!---FONTS---> <!---SOUCE SANS PRO---> <!---ASSISTANT EXTRA LIGHT---> <!---ASSISTANT REGULAR--->
+    <link rel="stylesheet" href="./mobile.css">
+    <link rel="stylesheet" href="./desktop.css">
+    <!---FONTS--->
+    <!---SOUCE SANS PRO--->
+    <!---ASSISTANT EXTRA LIGHT--->
+    <!---ASSISTANT REGULAR--->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Assistant:wght@200;400&family=Source+Sans+Pro&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Assistant:wght@200;400&family=Source+Sans+Pro&display=swap"
+        rel="stylesheet">
     <!---THEME COLOR--->
     <meta name="theme-color" content="#335384">
     <title>Portfolio</title>
 </head>
+
 <body>
-    <canvas></canvas>
     <div class="app">
-        <header class="nav">
+        <header>
+            <div class="profile">
+                <h2>Curiculo</h2>
+                <img src="../src/images/profile.png" class="profile-image" alt="Foto do Perfil">
+                <h3>MEUS CONTATOS</h3>
+            </div>
             <ul>
-                <li><img src="../src/images/profile.png" class="profile-image" alt="Foto do Perfil"></li>
-                <li><h3>MEUS CONTATOS</h3></li>
-                <li><img src="../src/icons/phone.svg" alt="ddd 85 991219590"><a href="https://api.whatsapp.com/send?phone=+5585991249590">(85) 99124 9590</a></li>
-                <li><img src="../src/icons/phone.svg" alt="ddd 85 991095608"><a href="https://api.whatsapp.com/send?phone=+5585991095608">(85) 99109 5608</a></li>
-                <li><img src="../src/icons/mail.svg" alt="icone de email"><a href="mailto:pjsoares46@gmail.com">pjsoares46@gmail.com</a></li>
-                <li><img src="../src/icons/github.svg" alt="icone do github"><a href="https://github.com/PedroJSBezerra">@PedroJSBezerra</a></li>
-                <li><img src="../src/icons/linkedin.svg" alt="icone do linkedin"><a href="https://www.linkedin.com/in/pedrojsbezerra/">@pedrojsbezerra</a></li>
-                <li><img src="../src/icons/map-pin.svg" alt="icone de localização"><a href="https://www.google.com.br/maps/@-4.1779003,-38.5335078,12z">Pacajus, Ceará, Brasil</a></li>
+                <li>
+                    <a href="https://api.whatsapp.com/send?phone=+5585991095608">
+                        <img class="icon" src="../src/icons/phone.svg" alt="ddd 85 991095608">
+                        (85) 99109 5608
+                    </a>
+                </li>
+                <li>
+                    <a href="mailto:pjsoares46@gmail.com">
+                        <img class="icon" src="../src/icons/mail.svg" alt="icone de email">
+                        pjsoares46@gmail.com
+                    </a>
+                </li>
+                <li>
+                    <a href="https://github.com/PedroJSBezerra">
+                        <img class="icon" src="../src/icons/github.svg" alt="icone do github">
+                        @PedroJSBezerra
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.linkedin.com/in/pedrojsbezerra/">
+                        <img class="icon" src="../src/icons/linkedin.svg" alt="icone do linkedin">
+                        @pedrojsbezerra
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.google.com.br/maps/@-4.1779003,-38.5335078,12z">
+                        <img class="icon" src="../src/icons/map-pin.svg" alt="icone de localização">
+                        Pacajus, Ceará, Brasil
+                    </a>
+                </li>
             </ul>
         </header>
         <main>
-            <div class="button"><span></span><span></span><span></span></div>
             <section>
                 <h1>PEDRO JS BEZERRA</h1>
-                <h2>WEB DEVELOPER</h2>
+                <h2>DESENVOLVEDOR WEB</h2>
             </section>
             <section>
                 <h3>PERFIL PROFISSIONAL</h3>
-                <p>Estou direcionando minha carreira e estudos para a área de desenvolvimento pois tenho afinidade com tecnologia</p>
+                <p>Sem trabalho formal há 2 anos, estudo programação web front-end e faço cursos gratuitos. Busco uma primeira oportunidade na área de tecnologia, e tenho planos de cursar Análise e Desenvolvimento de Sistemas.
+                    <br><br>Meu nível de Inglês é:
+                    <br>básico(Search/Read).
+                    <br>
+                    <br>Sou bom em :
+                    <br>Figma(design), Html, CSS, Git, terminal linux(bash).
+                    <br>
+                    <br>Minha stack de estudo atual é:
+                    <br>Nuvem(firebase), JavaScript, Svelte.</p>
             </section>
             <section>
                 <h3>HISTÓRICO EDUCACIONAL</h3>
-                <h3>Desenvolvedor web</h3>
+                <h3>Desenvolvedor Web | Maio 2021 - cursando</h3>
                 <p>FIC| Universidade estadual do Ceará</p>
-                <p>Projeto piloto Qualifica Mais do Governo Federal em Parceria com a Universidade Estadual do Ceará(UECE).</p>
-                <ul>
-                    <li>Desenvolvimento em Java</li>
-                    <li>Programação para web</li>
-                    <li>Projeto MVP</li>
-                </ul>
+                <p>Projeto piloto Qualifica Mais do Governo Federal em Parceria com a Universidade Estadual do
+                    Ceará(UECE).</p>
             </section>
             <section>
                 <h3>EXPERIÊNCIA DE TRABALHO</h3>
-                <h3>Almoxarife</h3>
-                <p>Prontocar Cml de peças e serviços | 3 anos</p>
+                <h3>Almoxarife | 3 anos</h3>
+                <p>Prontocar Cml de peças e serviços</p>
                 <ul>
                     <li>Controle de estoque, conferência de fluxo de mercadorias e ferramentaria.</li>
                     <li>Registro de entrada e saída de ítens em estoque.</li>
                 </ul>
-                
-                <h3>Vendedor de Autopeças</h3>
-                <p>JF Peças e Serviços Automotivos Ltda | 3 anos</p>
+
+                <h3>Vendedor de Autopeças | 3 anos</h3>
+                <p>JF Peças e Serviços Automotivos Ltda</p>
                 <ul>
                     <li>Venda técnica de peças e serviços no setor automotivo.</li>
                 </ul>
 
-                <h3>Cobrador Externo</h3>
-                <p>Macavi moveis e eletrodomesticos | 2 anos</p>
+                <h3>Cobrador Externo | 2 anos</h3>
+                <p>Macavi moveis e eletrodomesticos</p>
                 <ul>
                     <li>Cobrança de titulos.</li>
                 </ul>
             </section>
         </main>
         <footer>
-            <h3>CERTIFICADOS</h3>
-            <p>Hypertext Markup Language</p>
-            <p>Cascade Style Sheets</p>
-            <p>JavaScript</p>
         </footer>
     </div>
-    <script type="module" src="../src/index.js"></script>
+    <script type="module" src="./index.js"></script>
 </body>
+
 </html>
