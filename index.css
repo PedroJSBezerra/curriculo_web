@@ -32,13 +32,14 @@ body > *{
 }
 .profile{
     position: relative;
-    padding-top: 60px;
+    padding-top: 100px;
 }
 .profile img{
     position: absolute;
     top: -68px;
     left: 50%;
     transform: translateX(-50%);
+    border-radius: 50%;
 }
 /* Name */
 .profile h1{
@@ -53,7 +54,7 @@ body > *{
     margin-top: 0;
     padding-top: 0;
     width: 100%;
-    color: var(--primary2);
+    color: var(--font-color2);
 }
 /* cargo > mark */
 .profile h3:nth-last-of-type(2):before{
@@ -79,9 +80,9 @@ body > *{
 }
 /* ============== HYSTORY ============*/
 :where(.work, .education) h3:first-child{
-    color: var(--primary2);
+    color: var(--primary1);
 }
-:where(.work, .education) ul li, .education:last-child{
+:where(.work, .education) ul li, .education p:last-child{
     font-weight: 300;
 }
 :where(.work, .education) ul li::marker{
@@ -108,27 +109,38 @@ body > *{
 }
 .icon{
     width: 20px;
+    height: 20px;
     transform: translateY(4px);
     margin-right: 10px;
 }
 /* ========== BACKGROUND 2 ===============*/
 .background1{
-    background: url(./src/images/code.jpg);
+    background: url(./src/images/code.avif);
 }
 .background2{
-    background: url('./src/images/code2.png');
+    background: url('./src/images/code2.avif');
 }
 .background3{
-    background: url('./src/images/code3.png');
+    background: url('./src/images/code3.avif');
 }
 .background1, .background2, .background3{
-    min-height: 200px;
+    min-height: 400px;
     position: relative;
     opacity: 0.65;
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+:where(.background1, .background2, .background3) h3{
+    color: var(--font-color2);
+    letter-spacing: 4px;
+    background: #444;
+    padding: 1rem;
 }
 .history{
     background: var(--font-color2);

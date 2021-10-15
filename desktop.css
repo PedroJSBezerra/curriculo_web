@@ -1,7 +1,8 @@
 /* FOR DESKTOP SCREENS */
 @media screen and (min-width:800px){
      
-    body{
-        padding: 0 20%;
+    body > *{
+        width: 780px;
+        margin: 0 auto;
     }
 }
