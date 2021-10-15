@@ -1,10 +1,11 @@
+/* ====================== GLOBAL ======================= */
 :root{
     --primary1: #335384;
     --primary2: #5BA7D1;
     --font-color1: #000;
     --font-color2: #e9ecf1;
     --font-size1: 1.25rem;
-    --font-size2: 3.5rem;
+    --font-size2: 2.6rem;
 }
 @font-face {
     font-family: GlacialIndifference;
@@ -12,101 +13,124 @@
 }
 *,*::before,*::after{
     box-sizing: border-box;
-    margin: 0;
-    padding: 0;
 }
 body{
     font-family: 'Assistant', sans-serif;
     font-size: var(--font-size1);
     margin: 0;
+    padding: 0;
     overscroll-behavior-y: contain;
     background: var(--font-color2);
 }
-/* ============ HEADER ================= */
-header{
+body > *{
+    padding: 1rem;
+}
+/* =================== PROFILE ================== */
+.cover{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 200px;
+    width: 100%;
+}
+.background1{
+    background: url(./src/images/code.jpg);
+    background-attachment: fixed;
+    background-size: 100%;
+}
+.profile-image{
+    position: relative;
+    left: 50%;
+    top: 65%;
+    transform: translateX(-50%);
+}
+.profile, .contact{
     background: var(--primary1);
     color: var(--font-color2);
 }
-.profile{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+/* curriculo */
+.profile h3:first-child{
+    text-align: center;
 }
-.profile > * {
-    padding: 1rem;
-}
-header ul{
-    list-style-type: none;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    padding: 5%;
-}
-header ul li{
-    margin: 1rem 0;
-}
-header ul li a{
+.profile h3:first-child::after{
+    content: " ";
     display: block;
+    width: 100%;
+    height: 1px;
+    background: var(--font-color2);
+    border-radius: 2px;
+    margin-top: 1rem;
+}
+/* profile > card */
+.card{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    margin-top: 280px;
+}
+/* card > Name */
+.card h1{
+    margin: 0;
+    padding-bottom: 0;
+    font-family: GlacialIndifference, sans-serif;
+    font-size: var(--font-size2);
+    width: 100%;
+}
+/* card > Cargo */
+.card h3{
+    margin-top: 0;
+    padding-top: 0;
+    width: 100%;
+    color: var(--primary2);
+}
+/* cargo > mark */
+.card h3::before{
+    content: " ";
+    display: block;
+    width: 3rem;
+    height: 5px;
+    background: var(--font-color2);
+    border-radius: 2px;
+    animation: color 3s infinite ease-out;
+}
+@keyframes color {
+    0%{
+        background: white;
+    }
+    10%{
+        background: rgb(102, 226, 102);
+        box-shadow: 0 0 16px 1px rgb(102, 226, 102);
+    }
+    100%{
+        background: white;
+    }
+}
+/* ============== HYSTORY ============*/
+:where(.work, .education) h3:first-child{
+    color: var(--primary2);
+}
+
+/* ============== CONTACT ============*/
+.contact ul{
+    list-style-type: none;
+    padding: 0;
+}
+.contact ul li{
+    margin: .5rem 0;
+}
+.contact ul li a{
+    display: block;
+    text-decoration: none;
+    color: var(--font-color2);
+    background: rgb(255,255,255,.1);
     padding: 1rem;
     border-radius: 5px;
-    background: rgba(255,255,255,.1);
 }
-header ul li a:hover{
-    background: rgba(255,255,255,.2);
+.contact ul li a:hover{
+    background: rgb(255,255,255,.2);
 }
 .icon{
     width: 20px;
-    margin: 0 1rem 0 0;
     transform: translateY(4px);
-}
-h3{
-    letter-spacing: 1.5px;
-}
-    header a{
-    color: var(--font-color2);
-    text-decoration: none;
-}
-/* =============== M A I N ================ */
-main{
-    padding: 5%;
-}
-main > * {
-    margin-bottom: 4rem;
-}
-main section > * {
-    margin-bottom: 2%;
-}
-main section h1{
-    font-family: GlacialIndifference, sans-serif;
-    font-size: var(--font-size2);
-    color: var(--primary1);
-}
-main section h2::before{
-    content: " ";
-    display: block;
-    width: 12%;
-    height: 5px;
-    background: var(--primary1);
-}
-main section h2{
-    color: var(--primary2);
-}
-main section h3:first-child{
-    color: var(--primary2);
-}
-main section p:not(:first-child,:nth-child(2)){
-    font-weight: 300;
-}
-main section ul li{
-    margin-left: 1.3rem;
-    font-weight: 300;
-}
-main section ul li::marker{
-    color: var(--primary2);
-}
-/* ============= FOOTER ============== */
-footer{
-    color: var(--font-color2);
-    text-align: center;
-    background: var(--primary1);
 }
